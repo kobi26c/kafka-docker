@@ -10,6 +10,7 @@ This docker create 4 containers:
 
 Run docker-compose up
 
-After all containers are up
-to check all is working run:
+After all containers are up to check all is working run:
+
+
 curl -X POST http://localhost:9999/kafka_sample/message -H "Content-Type: text/plain" -d "My Message"

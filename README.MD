@@ -2,8 +2,8 @@
 ============
 
 This docker create 4 containers: 
-1. zookeeper
-2. kafka
+1. zookeeper (existing image)
+2. kafka (existing image of wurstmeister/kafka)
 3. producer + http service (spring)
 4. consumer (Java app)
 

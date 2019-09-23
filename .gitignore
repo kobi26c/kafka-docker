@@ -1,0 +1,19 @@
+#any .gradle and build
+\.gradle/
+build/
+
+
+
+#IntelliJ
+**/.idea/tasks.xml
+**/.idea/WFDiagnosticsSettings.xml
+**/.idea/WFPortalNameSettings.xml
+**/.idea/WFRTC.xml
+**/.idea/WFClearCase.xml
+**/.idea/dictionaries
+**/.idea/wf_run_local_options.xml
+**/.idea/workspace.xml
+	
+**/.idea/Gradle__*.xml
+**/.idea/gradle_*.xml
+**/.idea/gradle__*.xml

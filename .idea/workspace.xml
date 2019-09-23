@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab3c12cb-46d8-40b8-b5a4-cb587e64019d" name="Default Changelist" comment="" />
+    <list default="true" id="ab3c12cb-46d8-40b8-b5a4-cb587e64019d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kafka-docker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer-DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer-DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/lib/Consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/lib/Consumer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/lib/ProducerConsumerCommon-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/lib/ProducerConsumerCommon-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/common/Common.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/consumer/ConsumerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/cohen/examples/consumer/ConsumerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer-DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/Producer-DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/lib/Producer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/lib/Producer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/common/Common.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerRestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerServiceMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/stream/MainStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/build/classes/java/main/common/Common.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/build/libs/ProducerConsumerCommon-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/build/libs/ProducerConsumerCommon-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/com/cohen/examples/common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +54,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RCHZCJXFuAVwgA2zaWiwMxfpZQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,9 +69,10 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/views/g/kafka-streams-examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,11 +118,11 @@
   </component>
   <component name="RunManager" selected="Spring Boot.Producer">
     <configuration name="ConsumerHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="consumer.ConsumerHelper" />
+      <option name="MAIN_CLASS_NAME" value="com.cohen.examples.consumer.ConsumerHelper" />
       <module name="KafkaSample.Consumer.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="consumer.*" />
+          <option name="PATTERN" value="com.cohen.examples.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +138,11 @@
       </method>
     </configuration>
     <configuration name="ProducerHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="producer.ProducerHelper" />
-      <module name="KafkaSample.main" />
+      <option name="MAIN_CLASS_NAME" value="com.cohen.examples.producer.ProducerHelper" />
+      <module name="KafkaSample.Producer.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="producer.*" />
+          <option name="PATTERN" value="com.cohen.examples.producer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,7 +171,7 @@
     </configuration>
     <configuration name="Producer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="KafkaSample.Producer.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="producer.ProducerServiceMain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cohen.examples.producer.ProducerServiceMain" />
       <option name="VM_PARAMETERS" value="-Dserver.port=9999" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -178,6 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569164210808</updated>
       <workItem from="1569164213846" duration="13005000" />
+      <workItem from="1569255662022" duration="591000" />
     </task>
     <servers />
   </component>
@@ -207,6 +235,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1569174317573" />
+    <state x="650" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1569255931669">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1569255931669" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1569172842103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

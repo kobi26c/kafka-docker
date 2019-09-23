@@ -11,6 +11,4 @@ FROM openjdk:8-jre-slim
 
 ADD ./Producer /usr/local/producer
 
-
-RUN cd /usr/local/producer
 CMD ["java", "-cp", "/usr/local/producer/lib/*", "-Dserver.port=9999", "org.springframework.boot.loader.JarLauncher" ]

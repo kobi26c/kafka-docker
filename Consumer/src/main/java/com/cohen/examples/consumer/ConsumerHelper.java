@@ -1,6 +1,6 @@
 package com.cohen.examples.consumer;
 
-import com.cohen.examples.common.Common;
+import com.cohen.examples.common.KafkaUtils;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -43,7 +43,7 @@ public class ConsumerHelper {
 
     private static Consumer<Long, String> createConsumer() {
         final Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Common.getServer());
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KafkaUtils.getServer());
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "KafkaExampleConsumer");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
@@ -52,7 +52,7 @@ public class ConsumerHelper {
         final Consumer<Long, String> consumer = new KafkaConsumer<>(props);
 
         // Subscribe to the topic.
-        consumer.subscribe(Collections.singletonList(Common.TOPIC_NAME));
+        consumer.subscribe(Collections.singletonList(KafkaUtils.TOPIC_NAME));
 
         return consumer;
     }

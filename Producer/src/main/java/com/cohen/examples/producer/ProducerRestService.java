@@ -1,6 +1,5 @@
 package com.cohen.examples.producer;
 
-import com.cohen.examples.common.Common;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.kafka.clients.producer.Producer;
@@ -11,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.ws.rs.core.MediaType;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 
 @RestController
@@ -28,24 +29,24 @@ public class ProducerRestService {
 
     @PostMapping(path = "message", consumes = MediaType.TEXT_PLAIN)
     public void addMessage(@RequestBody String message) throws Exception {
-        OutputMessage outputMessage = new OutputMessage(message, new Date());
+        OutputMessage outputMessage = new OutputMessage(message,  LocalDateTime.now(ZoneId.of("Asia/Jerusalem")));
         ProducerHelper.runProducer(kafkaProducer, gson.toJson(outputMessage));
     }
 
     private static class OutputMessage {
         private String message;
-        private Date timestamp;
+        private String timestamp;
 
-        OutputMessage(String message, Date timestamp) {
+        OutputMessage(String message, LocalDateTime timestamp) {
             this.message = message;
-            this.timestamp = timestamp;
+            this.timestamp = timestamp.toString();
         }
 
         public String getMessage() {
             return message;
         }
 
-        public Date getTimestamp() {
+        public String getTimestamp() {
             return timestamp;
         }
     }

@@ -1,18 +1,11 @@
-#FROM ubuntu:14.04
-FROM openjdk:8-jre-slim 
-#FROM gradle:5.2.1-jre8 AS build
-#COPY . /home/gradle/src
+FROM gradle:jdk11 as build
+COPY --chown=gradle:gradle . /home/gradle
+WORKDIR /home/gradle
+RUN gradle :Consumer:build --no-daemon
 
-#WORKDIR /home/gradle/src
-#RUN ls
-#RUN /home/gradle/src/gradlew.sh :Consumer:build --no-daemon 
+FROM openjdk:11-jre-slim 
 
+COPY --from=build /home/gradle/Consumer/build/libs /app/lib
 
-
-ADD ./Consumer /usr/local/consumer
-
-
-
-
-
-CMD ["java", "-classpath", "/usr/local/consumer/lib/*", "com.cohen.examples.consumer.ConsumerHelper" ]
+WORKDIR /app
+CMD ["java", "-classpath", "lib/*", "com.cohen.examples.consumer.ConsumerHelper" ]

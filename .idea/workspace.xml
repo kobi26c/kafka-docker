@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3c12cb-46d8-40b8-b5a4-cb587e64019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kafka-docker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consumer-DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer-DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/lib/Consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/lib/Consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/lib/ProducerConsumerCommon-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/lib/ProducerConsumerCommon-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/common/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/consumer/ConsumerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/cohen/examples/consumer/ConsumerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/cohen/examples/consumer/ConsumerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/cohen/examples/consumer/ConsumerHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer-DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/Producer-DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/lib/Producer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/lib/Producer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/common/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerRestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/producer/ProducerServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerServiceMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/stream/MainStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/build/classes/java/main/common/Common.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/build/libs/ProducerConsumerCommon-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/build/libs/ProducerConsumerCommon-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/com/cohen/examples/common/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerRestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/src/main/java/com/cohen/examples/producer/ProducerServiceMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/com/cohen/examples/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProducerConsumerCommon/src/main/java/com/cohen/examples/common/KafkaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569164210808</updated>
       <workItem from="1569164213846" duration="13005000" />
-      <workItem from="1569255662022" duration="591000" />
+      <workItem from="1569255662022" duration="4200000" />
     </task>
     <servers />
   </component>
@@ -319,10 +310,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1569174130963" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1569175750159">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1569262618393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1569165236335" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1569175750159" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1569262618393" />
   </component>
 </project>

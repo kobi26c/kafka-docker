@@ -1,14 +1,25 @@
 #FROM ubuntu:14.04
  
+FROM gradle:jdk11 as build
+
 #FROM gradle:5.2.1-jdk8 AS build
-#COPY --chown=gradle:gradle . /home/gradle/src
-#WORKDIR /home/gradle/src
-#RUN gradle build --no-daemon 
+COPY --chown=gradle:gradle . /home/gradle
+WORKDIR /home/gradle
+RUN gradle :Producer:build --no-daemon
 
 
 
-FROM openjdk:8-jre-slim 
+FROM openjdk:11-jre-slim 
 
-ADD ./Producer /usr/local/producer
+#ADD ./Producer /usr/local/producer
 
-CMD ["java", "-cp", "/usr/local/producer/lib/*", "-Dserver.port=9999", "org.springframework.boot.loader.JarLauncher" ]
+#CMD ["java", "-cp", "/usr/local/producer/build/libs/*", "-Dserver.port=9999", "org.springframework.boot.loader.JarLauncher" ]
+
+
+COPY --from=build /home/gradle/Producer/build/libs /app/lib
+WORKDIR /app
+RUN ls
+
+WORKDIR /app
+#RUN java -cp "lib/*" -Dserver.port=9999 org.springframework.boot.loader.JarLauncher
+CMD ["java", "-cp", "lib/*", "-Dserver.port=9999", "org.springframework.boot.loader.JarLauncher" ]

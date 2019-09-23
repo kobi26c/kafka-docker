@@ -12,7 +12,15 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.apache.kafka', name: 'kafka-streams', version: '2.3.0'
+    compile group: 'org.apache.kafka', name: 'kafka-streams', version: '2.3.0'
+    compile project(':ProducerConsumerCommon')
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+tasks.register("copyToLib",  Copy) { Copy c ->
+    c.setDestinationDir(new File(buildDir, "libs"))
+    c.from(configurations.named("compile"))
+}
+
+tasks.named("assemble").configure { Task assemble -> assemble.dependsOn tasks.named("copyToLib")}

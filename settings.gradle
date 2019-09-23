@@ -1,5 +1,5 @@
 rootProject.name = 'KafkaSample'
 
-
+include "ProducerConsumerCommon"
 include "Producer"
 include "Consumer"

@@ -8,8 +8,6 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 
 public class ProducerHelper {
 
-    private final static String BOOTSTRAP_SERVERS = "localhost:9092";
-
 
     static void runProducer(Producer<Long, String> producer, String message) throws Exception {
 

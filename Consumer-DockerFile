@@ -1,0 +1,19 @@
+#FROM ubuntu:14.04
+FROM openjdk:8-jre-slim 
+#FROM gradle:5.2.1-jre8 AS build
+#COPY . /home/gradle/src
+
+#WORKDIR /home/gradle/src
+#RUN ls
+#RUN /home/gradle/src/gradlew.sh :Consumer:build --no-daemon 
+
+
+
+ADD ./Consumer /usr/local/consumer
+
+
+
+#RUN cd /usr/local/consumer
+
+
+CMD ["java", "-classpath", "/usr/local/consumer/lib/*", "consumer.ConsumerHelper" ]

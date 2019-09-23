@@ -1,8 +1,50 @@
 ---
 version: '2'
 services:
-  kafka-producer:
-    image: openjdk:8-jre-slim 
-    working_dir: ./Producer/build
-    command: java -cp libs/* org.springframework.boot.loader.JarLauncher
+  zookeeper:
+    image: zookeeper
+    hostname: zookeeper
+    ports:
+      - '2181:2181'
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
 
+  kafka:
+    image: kafkamanager/kafka-manager
+    hostname: kafka
+    ports:
+      - '9092:9092'
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_CREATE_TOPICS: "sample_topic:1:1"
+      ZK_HOSTS: zookeeper:32181
+
+  kafka-producer:
+    hostname: producer
+    container_name: producer
+    depends_on: 
+      - zookeeper
+      - kafka
+    build:
+        context: .
+        dockerfile: Producer-DockerFile
+    ports:
+      - '9999:9999'
+    environment:
+      KAFKA_SERVER: kafka:9092  
+  kafka-consumer:
+    hostname: consumer
+    container_name: consumer
+    depends_on: 
+      - zookeeper
+      - kafka
+      - kafka-producer
+    build:
+        context: .
+        dockerfile: Consumer-DockerFile
+    environment:
+      KAFKA_SERVER: kafka:9092  
